@@ -1,14 +1,14 @@
 
 #include<stdio.h>
 int kadane(int a[],int size){
-    int i,cursum=0,maxsum=0;
+    int i,cumsum=0,maxsum=0;
     for(i=0;i<size;i++){
-        cursum+=a[i];
-        if(cursum>maxsum){
-            maxsum=cursum;
+        cumsum+=a[i];
+        if(cumsum>maxsum){
+            maxsum=cumsum;
 
         }else{
-            cursum=0;
+            cumsum=0;
         }
     }return maxsum;
 }
